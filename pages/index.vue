@@ -1,65 +1,37 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        themes
+  <section class="home h-screen flex flex-col items-center justify-center">
+    <div class="text-center mb-12">
+      <h1 class="text-5xl">
+        Themes
       </h1>
-      <h2 class="subtitle">
+      <h2 class="font-medium">
         List of Themes with latest thecnologies
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+    </div>
+    <div>
+      <nuxt-link to="/adbera"
+                 class="no-underline tracking-wide text-xl text-white bg-green px-4 py-2 rounded-full shadow hover:shadow-md font-medium">
+                 Adbera
+      </nuxt-link>
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import AppLogo from "~/components/AppLogo.vue";
 
 export default {
   components: {
     AppLogo
   }
-}
+};
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+section {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
 }
 </style>
-

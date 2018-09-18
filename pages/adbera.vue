@@ -5,10 +5,10 @@
         <div class="text-white text-3xl">
           <img src="@/assets/logo.svg" alt="Logo image" class="h-12">
         </div>
-        <a href="#"
+        <nuxt-link to="/"
            class="px-6 h-10 flex items-center rounded-full bg-green-dark hover:bg-green-darker hover:shadow text-base text-white no-underline">
-           Lorem Ipsum
-        </a>
+           Back to Home
+        </nuxt-link>
       </nav>
     </header>
     <section class="h-auto bg-green pb-12">
