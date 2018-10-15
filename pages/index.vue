@@ -5,11 +5,11 @@
         Themes
       </h1>
       <h2 class="font-medium">
-        List of Themes with latest thecnologies
+        List of Themes with latest technologies
       </h2>
     </div>
     <div>
-      <nuxt-link 
+      <nuxt-link
         to="/adbera"
         class="no-underline tracking-wide text-xl text-white bg-green px-4 py-2 rounded-full shadow hover:shadow-md font-medium">
         Adbera
